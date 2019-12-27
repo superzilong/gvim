@@ -66,8 +66,8 @@ map <LEADER>l <C-w>l
 " 大写JKHL重复五次执行
 noremap J 5j
 noremap K 5k
-noremap H 5h
-noremap L 5l
+noremap H ^
+noremap L $
 " Copy to system clipboard
 vnoremap Y :w !xclip -i -sel c<CR>
 
@@ -89,7 +89,7 @@ map tml :+tabmove<CR>
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
 
 " Pretty Dress
 Plug 'vim-airline/vim-airline'
